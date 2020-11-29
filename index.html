@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <base href="https://shubham9672.github.io/roboticsclubskit.github.io//" target="_PARENT">
@@ -41,12 +41,18 @@
                 padding-bottom: 56.25%; /* 16:9 */
                 height:0;
             }
+            .hero-image{
+                /* background-image: url("roozbeh-eslami-YlVjrBkfXt8-unsplash.jpg"); */
+                background-color: white;
+                background-size: cover;
+            }
             .hero iframe {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
+                
             }
             
             .follow i{
@@ -55,27 +61,70 @@
                 margin-bottom:1rem;
 
             }
+            #particles-js{
+                background-color: black;
+                height: 680px;
+                position: relative;
+                /* background-size: cover; */
+            
+                text-align: center;
+                color: white;
+            }
+            /* Footer */
+            .footer{
+                background-color: #303036;
+                color: #d3d3d3;
+                height: 100px;
+                position: relative;
+            }
+            .footer .footer-bottom{
+                background-color: #343a40;
+                color: #686868;
+                height: 50px;
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                padding: 20px;
+            }
+            .footer .footer-content{
+                border: 1px solid blue;
+                height: 50px;
+                display: flex;
+            }
+            
+                        
+            
         </style>
     </head>
     <body>
       
-        <nav class="navbar  navbar-dark bg-dark">
-                <a class="navbar-brand " href="#!"> <img src="logo.png" alt="S&amp;T Logo" height="50px"> </a>
+        <nav class="navbar  navbar-dark bg-light">
+                <a class="navbar-brand " href="#!"> <img src="logo.png" alt="RCS Logo" height="100px"> </a>
+                Robotics Club Skit
         </nav>
-        <div class="hero">
-            <iframe width="560" height="315" src="https://drive.google.com/file/d/1DAXw4Y8_sZFLsILBfAkOsXYYNfJcAZkL/view?usp=sharing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        
+        <div id="particles-js">
+            <script type="text/javascript" src="particles.js"></script>
+            <script type="text/javascript" src="app.js"></script>
+        <div class="hero-image">
+        <!-- <div class="hero">
+           <iframe><video width="560" height="315" controls><source src="Presentation2.mp4" type="video/mp4"></video>
+           </iframe>
         </div>
-   
+    -->
      
         <div class="container text-center follow">
 
                 <h2 class="mt-2">Follow Us</h2>
          
             <div class="row d-flex justify-content-around mt-3 jumbotron">
-                <a href="https://www.instagram.com/snt_club/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i> Instagram</a>
-                <a href="https://www.youtube.com/channel/UCs7cNBZzRubgSe-zZJWif8A" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube"></i>Youtube</a>
-                <a href="https://www.linkedin.com/in/science-and-technology-club-93a66a176" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i>linkedin</a>
+                <a href="https://www.instagram.com/roboticsclubskit/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i> Instagram</a>
+                <a href="https://github.com/roboticscluskit" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i>Github</a>
+                <a href="roboticsclubskit@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-google"></i>GMAIL</a>
+                 <a href="https://github.com/roboticscluskit" target="_blank" rel="noopener noreferrer"><i class="fa fa-discord"></i>Github</a>
+
             </div>
             <div class="row d-flex justify-content-center mt-4">
                 <a href="annualreport.pdf" target="_blank"><span class="btn btn-dark">Annual Report 2019-20</span></a>
@@ -84,28 +133,25 @@
                 <a href="aboutclub.pdf" target="_blank"><span class="btn btn-dark">About Club</span></a>
             </div>
             <div class="row d-flex justify-content-center mt-4">
-               For any queries Contact  &nbsp;<a href="tel:+919521888950">+919521888950 </a>
+              <p> For any queries Contact  &nbsp;<br>
+               Chirag Jain<a href="tel:+919530480214">+919530480214 </a><br>
+               Aditya Gupta<a href="tel:+919352500960">+919352500960 </a>
+               <br>Shubham Menroy<br></p>
             </div>
             <div class="row d-flex justify-content-center mt-4">
                 <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSf3PSfKHJL3eUGM2P0LIF9HJqeBQTHPbeEXyM7yFd5fiI3rSg/viewform?usp=sf_link" width="640" height="2100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+            </div>
+            <div class="footer-bottom">
+                Disegned By Shubham Menroy
+            </div>
+        </div>
         </div>
         
     </body>
-        <script type="text/javascript">
-var load = 0;
-
-document.getElementById('gform').onload = function(){
-    /*Execute on every reload on iFrame*/
-    load++;
-    if(load > 2){
- 
-        /*Second reload is a submit*/
-        document.location = "https://chat.whatsapp.com/Gt5GZ4YkD8EAhuy449oeIp";
-    }
-}
-</script>
+       
     </html>
-
-
-    
