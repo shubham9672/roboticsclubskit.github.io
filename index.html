@@ -191,6 +191,29 @@ video.fillWidth {
     height: 100%;
     overflow: hidden;
 }
+.content {
+  position: relative;
+  height: 210px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  /* padding: 20px; */
+}
+#myBtn {
+  width: 100px;
+  font-size: 18px;
+  /* padding: 10px; */
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+   position: absolute;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
         </style>
     </head>
     <body>
@@ -209,12 +232,15 @@ video.fillWidth {
             <!-- <video  id="bgvid" playsinline autoplay muted loop>
             <source  src="Presentation2.mp4" type="video/mp4">  -->
         <div id="video-container">
-        <video  loop autoplay class="fillWidth">
+        <video autoplay preload loop class="fillWidth" id="myVideo">
             <source src="Present.mp4" type="video/mp4"/>
             
         </video>
+         
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+
     </div><!-- end video-container -->
-              
+             
         </div>
         <!-- <div id="videoDiv"> 
 <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
@@ -285,5 +311,23 @@ video.fillWidth {
         </div>
         
     </body>
+    <script>
+// Get the video
+var video = document.getElementById("myVideo");
 
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
     </html>
+
