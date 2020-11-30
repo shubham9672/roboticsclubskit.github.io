@@ -64,10 +64,11 @@
             }
             #particles-js{
                 background-image: url("Untitled design.png");
+                background-size: cover;
                 background-color: black;
                height: 680px;
                 position: relative;
-                background-size: cover;
+                
             }
             /* Footer */
             .footer{
@@ -207,8 +208,8 @@ video.fillWidth {
             <!-- <iframe width="560" height="315" src="Presentation.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             <!-- <video  id="bgvid" playsinline autoplay muted loop>
             <source  src="Presentation2.mp4" type="video/mp4">  -->
-                <div id="video-container">
-        <video playsinline autoplay muted loop class="fillWidth">
+        <div id="video-container">
+        <video autoplay preload loop class="fillWidth" id="myvideo">
             <source src="Present.mp4" type="video/mp4"/>
             
         </video>
@@ -284,5 +285,17 @@ video.fillWidth {
         </div>
         
     </body>
-       
+    <script type="text/javascript">
+// Get the video
+
+    var video=document.getElementById("myVideo");
+    while (1) {
+    video = document.getElementById("myVideo");
+ if (video.paused) {
+    video.play();
+  } }
+// Get the button
+
+// Pause and play the video, and change the button text
+</script>
     </html>
