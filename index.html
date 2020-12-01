@@ -64,8 +64,10 @@
             }
             #particles-js{
                 background-image: url("Untitled design.png");
-                background-size: cover;
+                /* background-size: cover; */
                 background-color: black;
+                background-repeat: no-repeat;
+                background-size:  100% 100%;
                height: 680px;
                 position: relative;
                 
@@ -317,6 +319,7 @@ var video = document.getElementById("myVideo");
 
 // Get the button
 var btn = document.getElementById("myBtn");
+btn.innerHTML = "Play";
 
 // Pause and play the video, and change the button text
 function myFunction() {
@@ -330,4 +333,3 @@ function myFunction() {
 }
 </script>
     </html>
-
